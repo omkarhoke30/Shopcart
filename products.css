@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+/* HERO */
+
+.products-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(to right, #edf4ff, #f7fbff);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    color: #666;
+    max-width: 500px;
+    line-height: 1.8;
+}
+
+.hero-image img {
+    width: 500px;
+    max-width: 100%;
+}
+
+/* MAIN */
+
+.products-section {
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+}
+
+/* FILTER */
+
+.filters {
+    border: 1px solid #eee;
+    padding: 25px;
+    border-radius: 15px;
+    height: max-content;
+    position: sticky;
+    top: 36px;
+}
+
+.filter-box {
+    margin-bottom: 30px;
+}
+
+.filter-box h3 {
+    margin-bottom: 15px;
+}
+
+.filter-box ul {
+    list-style: none;
+}
+
+.filter-box li {
+    padding: 10px 0;
+    color: #666;
+}
+
+/* TOP */
+
+.products-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.products-top select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* GRID */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+
+.product-card {
+    position: relative;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 20px;
+    background: #fff;
+    transition: .3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.wishlist {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #888;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: #f7b500;
+    margin-bottom: 10px;
+}
+
+.price-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.product-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #0d6efd;
+    color: white;
+    cursor: pointer;
+}
+
+/* PAGINATION */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.pagination button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.pagination .active {
+    background: #0d6efd;
+    color: #fff;
+}
+
+/* OFFER */
+
+.offer-banner {
+    width: 90%;
+    margin: 60px auto;
+    padding: 50px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #dbe8ff, #eef5ff);
+}
+
+.offer-banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.offer-banner p {
+    margin-bottom: 20px;
+}
+
+.offer-banner button {
+    padding: 14px 30px;
+    border: none;
+    background: #0d6efd;
+    color: white;
+    border-radius: 8px;
+}
+
+/* NEWSLETTER */
+
+.pro-newsletter {
+    width: 90%;
+    margin: 60px auto;
+    padding: 40px;
+    background: #eef5ff;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    width: 350px;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.newsletter-form button {
+    padding: 14px 25px;
+    border: none;
+    background: #0d6efd;
+    color: white;
+    border-radius: 8px;
+}
+
+/* TABLET */
+
+@media(max-width:992px) {
+
+    .products-section {
+        grid-template-columns: 1fr;
+    }
+
+    .products-hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+}
+
+/* MOBILE */
+
+@media(max-width:768px) {
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .products-top {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+
+    .offer-banner h2 {
+        font-size: 2rem;
+    }
+}

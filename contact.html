@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-share your problem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    /* =========================
+   CONTACT HERO
+========================= */
+
+.contact-hero{
+    background: #eef4ff;
+    padding: 6rem 8%;
+}
+
+.contact-hero-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.hero-text{
+    flex: 1;
+}
+
+.hero-text h1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.hero-text p{
+    font-size: 20px;
+    line-height: 1.8;
+    color: #555;
+    max-width: 500px;
+}
+
+.hero-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img{
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section{
+    padding: 6rem 8%;
+    background: #ffffff;
+}
+
+.contact-container{
+    max-width: 1400px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 4rem;
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.contact-info h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #111827;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-card{
+   background: #fff;
+    border-radius: 16px;
+    padding: 22px;
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.info-card:hover{
+    transform: translateY(-5px);
+}
+
+.info-card i{
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+    color: #fff;
+    font-size: 1rem;
+
+    flex-shrink: 0;
+}
+
+.info-card h3{
+    font-size: 18px;
+    margin-bottom: 0.8rem;
+    color: #111827;
+
+
+}
+
+.info-card p{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* =========================
+   FORM SECTION
+========================= */
+
+.contact-form{
+    background: #fff;
+
+    padding: 3rem;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+.contact-form h2{
+    font-size: 30px;
+    margin-bottom: 2rem;
+    color: #111827;
+}
+
+.input-row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color: #2563eb;
+}
+
+.contact-form textarea{
+    resize: none;
+}
+
+.contact-form button{
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 16px 29px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover{
+    background: #1d4ed8;
+}
+
+.contact-form button i{
+    margin-right: .8rem;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:992px){
+
+    .contact-hero-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text p{
+        margin: auto;
+    }
+
+    .contact-container{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .contact-hero{
+        padding: 4rem 5%;
+    }
+
+    .contact-section{
+        padding: 4rem 5%;
+    }
+
+    .hero-text h1{
+        font-size: 2.8rem;
+    }
+
+    .hero-text p{
+        font-size: 17px;
+    }
+
+    .contact-form h2,
+    .contact-info h2{
+        font-size: 25px;
+    }
+
+    .input-row{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info{
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form{
+        padding: 2rem;
+    }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:480px){
+
+    .hero-text h1{
+        font-size: 2rem;
+    }
+
+    .contact-form h2,
+    .contact-info h2{
+        font-size: 1.4rem;
+    }
+
+    .info-card{
+        padding: 1.5rem;
+    }
+
+    .info-card i{
+        width: 50px;
+        height: 50px;
+        font-size: 1.6rem;
+    }
+
+    .contact-form button{
+        width: 100%;
+    }
+}
+</style>
+  
+</head>
+
+<body>
+    <header>
+        <div class="top_pop_container">
+            <div>
+                <p class="top_pop_txt">Free Shoping. 30-Day return or refund guarantee.</p>
+            </div>
+            <div>
+                <a href="login.html" class="sign_in_btn">Sign In</a>
+            </div>
+        </div>
+        <div class="navbar-container">
+            <div class="navbar">
+
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                    <p>Shop<span style="color: rgb(149, 149, 253);">Cart</span></p>
+
+
+                </div>
+                <div class="navbar-list">
+                    <ul class="navbar-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html" >Products</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="contact.html" style="color:#5a8cfb;">Contact</a></li>
+                        <li><a href="MyPurchase.html">MyPurchase</a></li>
+                        <a href="MyPurchase.html" class="shop-cart-btn"><i class="fa-solid fa-cart-shopping"> </i>
+                            <span class="cartvalue">0</span></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar2">
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <svg class="btn " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path
+                            d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+                    </svg>
+                    <svg class="cancel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path
+                            d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z" />
+                    </svg>
+                </label>
+                <div class="sidebar">
+                    <header>MY MENU</header>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="MyPurchase.html">My Purchase</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <div class="hero-text">
+                <h1>Contact Us</h1>
+                <p>
+                    We'd love to hear from you! Send us a message and
+                    we'll get back to you as soon as possible.
+                </p>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/e1.png" alt="Electronics">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+
+        <div class="contact-container">
+
+            <!-- Contact Info -->
+
+            <div class="contact-info">
+                
+
+                <div class="info-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>123 Tech Street,<br>New York, USA 10001</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>support@shopcart.com</p>
+                        <p>info@shopcart.com</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+1 234 567 8900</p>
+                        <p>+1 987 654 3210</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <i class="fa-regular fa-clock"></i>
+                    <div>
+                        <h3>Working Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday - Sunday: Closed</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Contact Form -->
+
+            <div class="contact-form">
+
+                <h2>Send Us a Message</h2>
+
+                <form>
+
+                    <div class="input-row">
+                        <input type="text" placeholder="Your Name">
+                        <input type="email" placeholder="Your Email">
+                    </div>
+
+                    <input type="text" placeholder="Subject">
+
+                    <textarea rows="8" placeholder="Your Message"></textarea>
+
+                    <button type="submit">
+                        <i class="fa-regular fa-paper-plane"></i>
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><img src="images/logo.png" alt="logo" style=" width: 56px;"> ShopCart</h3>
+                <p>Your Trusted destination for premium electronics and smart gadgets.</p>
+                <div class="social-icons">
+                    <a href="#" data-testid="social-facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" data-testid="social-twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" data-testid="social-instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" data-testid="social-youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="products.html">products</a></li>
+                    <li><a href="about.html">about </a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Subscribe for updates</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Your email" data-testid="newsletter-input">
+                    <button data-testid="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ShopCart. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

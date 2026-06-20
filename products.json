@@ -1,0 +1,254 @@
+[
+  {
+    "id": 1,
+    "name": "Macbook Air m3",
+    "category": "Computers",
+    "brand": "Apple",
+    "price": 899.99,
+    "stock": 50,
+    "description": "Powerful laptop with Intel i5 processor, 8GB RAM and 256GB SSD.",
+    "image": "images/laptop1.png"
+  },
+  {
+    "id": 2,
+    "name": "iPhone 17",
+    "category": "Smartphones",
+    "brand": "Apple",
+    "price": 1200.99,
+    "stock": 10,
+    "description": "Premium smartphone with A16 chip and advanced camera system.",
+    "image": "images/iphone17.png"
+  },
+  {
+    "id": 3,
+    "name": "Xiaomi Galaxy S24",
+    "category": "Smartphones",
+    "brand": "Xiaomi",
+    "price": 899.99,
+    "stock": 40,
+    "description": "Flagship Android smartphone with AI-powered features.",
+    "image": "images/xiomi1.png"
+  },
+  {
+    "id": 4,
+    "name": "Sony WH-1000XM5",
+    "category": "Audio",
+    "brand": "Sony",
+    "price": 279.99,
+    "stock": 25,
+    "description": "Industry-leading noise-canceling wireless headphones.",
+    "image": "images/headphone.png"
+  },
+  {
+    "id": 5,
+    "name": "Samsung 55 Inch Smart TV",
+    "category": "Televisions",
+    "brand": "Samsung",
+    "price": 849.99,
+    "stock": 15,
+    "description": "4K Ultra HD Smart TV with HDR support.",
+    "image": "images/tv.png"
+  },
+  {
+    "id": 6,
+    "name": "Canon EOS 2000D",
+    "category": "Cameras",
+    "brand": "Canon",
+    "price": 499.99,
+    "stock": 20,
+    "description": "DSLR camera with 24.1MP sensor for stunning photography.",
+    "image": "images/camera1.png"
+  },
+  {
+    "id": 7,
+    "name": "Apple AirPods Pro 2",
+    "category": "Audio",
+    "brand": "Apple",
+    "price": 249.99,
+    "stock": 35,
+    "description": "Wireless earbuds with active noise cancellation.",
+    "image": "images/airpod.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Canon EOS 400D",
+    "category": "Cameras",
+    "brand": "Canon",
+    "price": 699.99,
+    "stock": 10,
+    "description": "DSLR camera with 24.1MP sensor for stunning photography.",
+    "image": "images/camera2.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Smart Watch",
+    "category": "SmartWatches",
+    "brand": "Noise",
+    "price": 99.99,
+    "stock": 45,
+    "description": "Multi-purpose and multiuses smart watch that track your life",
+    "image": "images/watch.png"
+  },
+  {
+    "id": 10,
+    "name": "MacBook Air M2",
+    "category": "Computers",
+    "brand": "Apple",
+    "price": 1099.99,
+    "stock": 18,
+    "description": "Ultra-thin laptop powered by Apple's M2 chip.",
+    "image": "images/laptop3.png"
+  },
+  {
+    "id": 11,
+    "name": "Bose SoundLink Flex",
+    "category": "Audio",
+    "brand": "Bose",
+    "price": 129.99,
+    "stock": 22,
+    "description": "Portable Bluetooth speaker with rich sound quality.",
+    "image": "images/speakers.png"
+  },
+  {
+    "id": 12,
+    "name": "AC",
+    "category": "electronics",
+    "brand": "LG",
+    "price": 899.99,
+    "stock": 22,
+    "description": "digital air contional",
+    "image": "images/ac.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Sony WH-10XM8",
+    "category": "Audio",
+    "brand": "Sony",
+    "price": 279.99,
+    "stock": 14,
+    "description": "Industry-leading noise-canceling wireless headphones.",
+    "image": "images/headphone1.jpg"
+  },
+  {
+    "id": 14,
+    "name": "iPhone 12",
+    "category": "Smartphones",
+    "brand": "Apple",
+    "price": 799.99,
+    "stock": 10,
+    "description": "Premium smartphone with A16 chip and advanced camera system.",
+    "image": "images/iphone12.jpg"
+  },
+  
+  {
+    "id": 15,
+    "name": "Samsung Double Door Refrigerator",
+    "category": "Refrigerators",
+    "brand": "Samsung",
+    "price": 2999.99,
+    "stock": 12,
+    "description": "Energy-efficient refrigerator with digital inverter technology and spacious storage.",
+    "image": "images/refri.jpg"
+  },
+  {
+    "id": 16,
+    "name": "LG Front Load Washing Machine",
+    "category": "Washing Machines",
+    "brand": "LG",
+    "price": 1300.99,
+    "stock": 8,
+    "description": "Fully automatic washing machine with AI wash and steam cleaning.",
+    "image": "images/washingm.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Whirlpool Microwave Oven",
+    "category": "Microwaves",
+    "brand": "Whirlpool",
+    "price": 500.99,
+    "stock": 20,
+    "description": "Convection microwave oven with multiple cooking modes.",
+    "image": "images/microwave.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Dyson V15 Vacuum Cleaner",
+    "category": "Vacuum Cleaners",
+    "brand": "Dyson",
+    "price": 899.99,
+    "stock": 10,
+    "description": "Cordless vacuum cleaner with powerful suction and HEPA filtration.",
+    "image": "images/cleaner.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Daikin Split Air Conditioner",
+    "category": "Air Conditioners",
+    "brand": "Daikin",
+    "price": 1099.99,
+    "stock": 7,
+    "description": "1.5 Ton inverter AC with fast cooling and low power consumption.",
+    "image": "images/airconditioner.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Kent RO Water Purifier",
+    "category": "Water Purifiers",
+    "brand": "Kent",
+    "price": 689.99,
+    "stock": 18,
+    "description": "Advanced RO+UV purification system for safe drinking water.",
+    "image": "images/purifier.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Philips Air Fryer",
+    "category": "Kitchen Appliances",
+    "brand": "Philips",
+    "price": 599.99,
+    "stock": 15,
+    "description": "Healthy air fryer with rapid air technology for oil-free cooking.",
+    "image": "images/airfryer.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Bosch Dishwasher",
+    "category": "Dishwashers",
+    "brand": "Bosch",
+    "price": 599.99,
+    "stock": 9,
+    "description": "Quiet and efficient dishwasher with multiple wash programs.",
+    "image": "images/dishwasher.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Havells Ceiling Fan",
+    "category": "Fans",
+    "brand": "Havells",
+    "price": 89.99,
+    "stock": 30,
+    "description": "High-speed ceiling fan with energy-saving motor.",
+    "image": "images/fan.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Prestige Induction Cooktop",
+    "category": "Kitchen Appliances",
+    "brand": "Prestige",
+    "price": 79.99,
+    "stock": 22,
+    "description": "Portable induction cooktop with smart temperature control.",
+    "image": "images/digitalgas.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Voltas Desert Air Cooler",
+    "category": "Air Coolers",
+    "brand": "Voltas",
+    "price": 149.99,
+    "stock": 16,
+    "description": "High-capacity air cooler ideal for large rooms and summer comfort.",
+    "image": "images/cooler.jpg"
+  }
+
+]

@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+<style>
+    /* =========================
+   ABOUT HERO SECTION
+========================= */
+
+.about-hero{
+    width:100%;
+    min-height:80vh;
+    padding:60px 6%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    background:linear-gradient(to right,#eef4ff,#ffffff);
+}
+
+.about-content{
+    flex:1;
+}
+
+.about-tag{
+    color:#0d5eff;
+    font-weight:600;
+    font-size:1rem;
+}
+
+.about-content h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin:15px 0;
+    color:#222;
+}
+
+.about-content h1 span{
+    color:#0d5eff;
+}
+
+.about-content p{
+    max-width:550px;
+    color:#555;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+.shop-btn{
+    margin-top:25px;
+    padding:14px 32px;
+    border:none;
+    border-radius:8px;
+    background:#0d5eff;
+    color:white;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:600;
+}
+
+.shop-btn i{
+    margin-left:10px;
+}
+
+.about-image{
+    flex:1;
+}
+
+.about-image img{
+    width:100%;
+    max-width:700px;
+    display:block;
+}
+
+/* =========================
+   OUR STORY
+========================= */
+
+.our-story{
+    width:88%;
+    margin:70px auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.story-image img{
+    width:100%;
+    border-radius:18px;
+    display:block;
+}
+
+.story-content span{
+    color:#0d5eff;
+    font-size:1.1rem;
+    font-weight:600;
+}
+
+.story-content h2{
+    font-size:3rem;
+    margin:15px 0;
+    line-height:1.2;
+    color:#222;
+}
+
+.story-content h2 span{
+    color:#0d5eff;
+}
+
+.story-content p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+/* =========================
+   WHY SHOPCART
+========================= */
+
+.why-shopcart{
+    width:88%;
+    margin:50px auto;
+    text-align:center;
+}
+
+.why-shopcart h2{
+    font-size:2.5rem;
+    margin-bottom:40px;
+    position:relative;
+}
+
+.why-shopcart h2::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#0d5eff;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-12px;
+    border-radius:20px;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.feature-card{
+    background:#fff;
+    padding:35px 25px;
+    border-radius:16px;
+    border:1px solid #e9e9e9;
+    text-align:left;
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.feature-card div{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:15px;
+}
+
+.feature-card i{
+    width:55px;
+    height:55px;
+    background:#0d5eff;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.3rem;
+}
+
+.feature-card h3{
+    color:#222;
+}
+
+.feature-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+/* =========================
+   STATS SECTION
+========================= */
+
+.stats-section{
+    width:88%;
+    margin:60px auto;
+    background:linear-gradient(90deg,#0d5eff,#7ca9ff);
+    border-radius:18px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    padding:35px;
+}
+
+.stat{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    color:white;
+    border-right:1px solid rgba(255,255,255,.3);
+}
+
+.stat:last-child{
+    border-right:none;
+}
+
+.stat h2{
+    font-size:2.5rem;
+}
+
+.stat p{
+    opacity:.9;
+}
+
+/* =========================
+   TEAM SECTION
+========================= */
+
+.team-section{
+    width:88%;
+    margin:70px auto;
+    text-align:center;
+}
+
+.team-section h2{
+    font-size:2.5rem;
+    margin-bottom:40px;
+    position:relative;
+}
+
+.team-section h2::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#0d5eff;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-12px;
+    border-radius:20px;
+}
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.team-card{
+    background:white;
+    border:1px solid #ececec;
+    border-radius:16px;
+    padding:30px 20px;
+    transition:.3s;
+}
+
+.team-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.team-card img{
+    width:140px;
+    height:140px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-bottom:15px;
+}
+
+.team-card h3{
+    margin-bottom:10px;
+    color:#222;
+}
+
+.team-card p{
+    color:#666;
+}
+
+.team-card .social-icons{
+    margin-top:18px;
+    display:flex;
+    justify-content:center;
+    gap:18px;
+}
+
+.team-card .social-icons a{
+    color:#0d5eff;
+    font-size:1.2rem;
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.products-newsletter{
+    width:88%;
+    margin:60px auto;
+    padding:40px;
+    background:linear-gradient(to right,#eef4ff,#dce8ff);
+    border-radius:18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:30px;
+}
+
+.products-newsletter h2{
+    margin-bottom:10px;
+    color:#222;
+}
+
+.products-newsletter p{
+    color:#666;
+}
+
+.products-newsletter form{
+    display:flex;
+    gap:15px;
+}
+
+.products-newsletter input{
+    width:300px;
+    padding:14px 18px;
+    border:none;
+    border-radius:8px;
+    outline:none;
+}
+
+.products-newsletter button{
+    padding:14px 28px;
+    border:none;
+    background:#0d5eff;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1024px){
+
+    .feature-grid,
+    .team-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stats-section{
+        grid-template-columns:repeat(2,1fr);
+        gap:25px;
+    }
+
+    .stat{
+        border:none;
+    }
+}
+
+@media(max-width:768px){
+
+    .about-hero{
+        flex-direction:column;
+        text-align:center;
+        padding:50px 20px;
+    }
+
+    .about-content h1{
+        font-size:2.8rem;
+    }
+
+    .our-story{
+        grid-template-columns:1fr;
+    }
+
+    .story-content h2{
+        font-size:2.2rem;
+    }
+
+    .feature-grid,
+    .team-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stats-section{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .products-newsletter{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .products-newsletter form{
+        width:100%;
+        flex-direction:column;
+    }
+
+    .products-newsletter input{
+        width:100%;
+    }
+}
+
+@media(max-width:480px){
+
+    .about-content h1{
+        font-size:2.2rem;
+    }
+
+    .why-shopcart h2,
+    .team-section h2{
+        font-size:2rem;
+    }
+
+    .story-content h2{
+        font-size:1.8rem;
+    }
+
+    .stat h2{
+        font-size:2rem;
+    }
+
+    .products-newsletter{
+        padding:25px;
+    }
+}
+</style>
+</head>
+
+<body>
+    <header>
+        <div class="top_pop_container">
+            <div>
+                <p class="top_pop_txt">Free Shoping. 30-Day return or refund guarantee.</p>
+            </div>
+            <div>
+                <a href="login.html" class="sign_in_btn">Sign In</a>
+            </div>
+        </div>
+        <div class="navbar-container">
+            <div class="navbar">
+
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo">
+                    <p>Shop<span style="color: rgb(149, 149, 253);">Cart</span></p>
+
+
+                </div>
+                <div class="navbar-list">
+                    <ul class="navbar-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="About.html" style="color:#5a8cfb ;">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="MyPurchase.html">MyPurchase</a></li>
+                        <a href="MyPurchase.html" class="shop-cart-btn"><i class="fa-solid fa-cart-shopping"> </i>
+                            <span class="cartvalue">0</span></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar2">
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <svg class="btn " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path
+                            d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z" />
+                    </svg>
+                    <svg class="cancel" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                        <path
+                            d="M504.6 148.5C515.9 134.9 514.1 114.7 500.5 103.4C486.9 92.1 466.7 93.9 455.4 107.5L320 270L184.6 107.5C173.3 93.9 153.1 92.1 139.5 103.4C125.9 114.7 124.1 134.9 135.4 148.5L278.3 320L135.4 491.5C124.1 505.1 125.9 525.3 139.5 536.6C153.1 547.9 173.3 546.1 184.6 532.5L320 370L455.4 532.5C466.7 546.1 486.9 547.9 500.5 536.6C514.1 525.3 515.9 505.1 504.6 491.5L361.7 320L504.6 148.5z" />
+                    </svg>
+                </label>
+                <div class="sidebar">
+                    <header>MY MENU</header>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="MyPurchase.html">My Purchase</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div class="about-content">
+            <span class="about-tag">About ShopCart</span>
+
+            <h1>
+                Technology that<br>
+                Enhances <span>Your Life</span>
+            </h1>
+
+            <p>
+                ShopCart is your trusted destination for premium electronics.
+                We bring you the latest technology, top brands, and unbeatable prices.
+            </p>
+
+            <a href="products.html"><button class="shop-btn">Shop Now <i class="fas fa-arrow-right"></i></button></a>
+        </div>
+
+        <div class="about-image">
+            <img src="images/aboutHeaderImage.png" alt="aboutHeaderImage">
+        </div>
+    </section>
+
+    <section class="our-story">
+
+        <div class="story-image">
+            <img src="images/aboutImage.png" alt="company">
+        </div>
+
+        <div class="story-content">
+
+            <span>Our Story</span>
+
+            <h2>
+                Committed to Quality.
+                Focused on <span>You.</span>
+            </h2>
+
+            <p>
+                Founded with a simple mission — to make the best
+                electronic products accessible to everyone.
+            </p>
+
+            <p>
+                From cutting-edge gadgets to everyday essentials,
+                ShopCart is here to power your lifestyle.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="why-shopcart">
+
+        <h2>Why Choose ShopCart?</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div>
+                    <i class="fa-solid fa-shield"></i>
+                    <h3>Quality Assured</h3>
+                </div>
+                <p>We provide 100% orginal products from trusted brands.</p>
+            </div>
+
+            <div class="feature-card">
+                <div>
+
+                    <i class="fa-solid fa-tag"></i>
+                    <h3>Best Prices</h3>
+                </div>
+                <p>Unbeatable prices and exciting offers on all products</p>
+            </div>
+
+            <div class="feature-card">
+                <div>
+
+                    <i class="fa-solid fa-truck"></i>
+                    <h3>Fast Delivery</h3>
+                </div>
+                <p>Quick and secure delivery right to your doorstep.</p>
+            </div>
+
+            <div class="feature-card">
+                <div>
+
+                    <i class="fa-solid fa-headset"></i>
+                    <h3>Customer Support</h3>
+                </div>
+                <p>Our support team is available 24/7 to help you.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="stats-section">
+
+        <div class="stat">
+
+            <img src="images/shopping-cart.png" alt="" style="width:42px ; ">
+            <div>
+
+                <h2>50K+</h2>
+                <p>Happy Customers</p>
+            </div>
+        </div>
+
+        <div class="stat">
+            <img src="images/box.png" alt="" style="width:42px ;">
+            <div>
+
+                <h2>10K+</h2>
+                <p>Products</p>
+            </div>
+        </div>
+
+        <div class="stat">
+            <img src="images/award.png" alt="" style="width:42px ;">
+            <div>
+
+                <h2>200+</h2>
+                <p>Top Brands</p>
+            </div>
+        </div>
+
+        <div class="stat">
+            <img src="images/smile.png" alt="" style="width:42px ;">
+            <div>
+                <h2>4.8/5</h2>
+
+                <p>Customer Rating</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="team-section">
+
+        <h2>Meet Our Team</h2>
+
+        <div class="team-grid">
+
+            <div class="team-card">
+                <img src="images/profile1.png">
+                <h3>Alex Johnson</h3>
+                <p>CEO & Founder</p>
+                <div class="social-icons">
+                    <a href="#" data-testid="social-facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" data-testid="social-twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" data-testid="social-instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            
+
+            <div class="team-card">
+                <img src="images/profile2.png">
+                <h3>Michael Brown</h3>
+                <p>Marketing Head</p>
+                <div class="social-icons">
+                    <a href="#" data-testid="social-facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" data-testid="social-twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" data-testid="social-instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="team-card">
+                <img src="images/profie3.png">
+                <h3>Sophia Williams</h3>
+                <p>Operations Head</p>
+                <div class="social-icons">
+                    <a href="#" data-testid="social-facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" data-testid="social-twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" data-testid="social-instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="images/profile4.png">
+                <h3>Emma Davis</h3>
+                <p>Support Lead</p>
+                <div class="social-icons">
+                    <a href="#" data-testid="social-facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" data-testid="social-twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" data-testid="social-instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="products-newsletter">
+
+        <div>
+            <h2>Stay Updated</h2>
+            <p>Subscribe for latest offers.</p>
+        </div>
+
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </form>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><img src="images/logo.png" alt="logo" style=" width: 56px;"> ShopCart</h3>
+                <p>Your Trusted destination for premium electronics and smart gadgets.</p>
+                <div class="social-icons">
+                    <a href="#" data-testid="social-facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" data-testid="social-twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" data-testid="social-instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" data-testid="social-youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="products.html">products</a></li>
+                    <li><a href="about.html">about </a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Subscribe for updates</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Your email" data-testid="newsletter-input">
+                    <button data-testid="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ShopCart. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
