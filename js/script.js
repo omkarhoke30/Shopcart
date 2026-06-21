@@ -11,7 +11,7 @@ async function GetAndDisplayData() {
         return;
     }
     try {
-        const res = await fetch("https://omkarhoke30.github.io/Shopcart/products.json");
+        const res = await fetch("./products.json");
         let products = await res.json();
         let displayProducts;
         const isHomePage = window.location.pathname.includes("index.html");
