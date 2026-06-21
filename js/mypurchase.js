@@ -11,7 +11,7 @@ async function GetDataFromLocal() {
     }
     try {
 
-        let res = await fetch("../products.json");
+        let res = await fetch("https://omkarhoke30.github.io/Shopcart/products.json");
         let jsonproducts = await res.json();
 
         let filteredProducts = jsonproducts.filter((product) => {
