@@ -43,7 +43,7 @@ async function GetAndDisplayData() {
 
         productClone.querySelector(".category").textContent = category;
         productClone.querySelector(".productName").textContent = name;
-        productClone.querySelector(".productDescription").textContent = description;
+        // productClone.querySelector(".productDescription").textContent = description;
         productClone.querySelector(".productPrice").textContent = `$${price}`;
         productClone.querySelector(".productActualPrice").textContent = `$${price * 2}`;
         productClone.querySelector(".productStock").textContent = stock;
@@ -56,7 +56,9 @@ async function GetAndDisplayData() {
             QuantityChange(id, stock, e);
         });
 
-
+        productClone.querySelector('.view-btn').addEventListener("click",(e) => { 
+            modalpop(e,image,name,price,description,stock,id);
+         })
 
         //----------> this is for add to cart button ---------------
 
@@ -74,7 +76,25 @@ async function GetAndDisplayData() {
 }
 
 
+function modalpop(e,image,name,price,description,stock,id){
+    let modal=document.querySelector('.modal');
+    modal.style.display="flex";
+    modal.querySelector(".modal-close").addEventListener("click",()=>{
+        modal.style.display="none"
 
+    })
+
+    modal.querySelector('#modal-image').src=image;
+    modal.querySelector('#modal-title').innerHTML=name;
+    modal.querySelector('#modal-price').innerHTML=`$${price}`;
+    modal.querySelector('#modal-decription').innerHTML=description;
+     modal.querySelector('.add-to-cart-button').addEventListener("click", (e) => {
+            AddtoCartBtn(id, stock, e);
+        });
+
+      
+    
+}
 
 
 GetAndDisplayData();
