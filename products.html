@@ -38,7 +38,7 @@
                     <ul class="navbar-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html" style="color:#5a8cfb;">Products</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="About.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="MyPurchase.html">MyPurchase</a></li>
                         <a href="MyPurchase.html" class="shop-cart-btn"><i class="fa-solid fa-cart-shopping"> </i>
@@ -63,7 +63,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="About.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="MyPurchase.html">My Purchase</a></li>
                     </ul>
@@ -164,48 +164,59 @@
 
     </section>
     <template id="productTemplate">
-        <div class="cards" id="cardvalue">
-            <article class="information [card]">
-                <span class="category"></span>
-                <div class="imageContainer">
-                    <img src="" alt="">
-                </div>
-                <h2 class="productName"></h2>
-                <div class="productRating">
-
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <p class="productDescription">
-
-                </p>
-                <div class="productPriceElement">
-                    <p class="productPrice"></p>
-                    <p class="productActualPrice"></p>
-                </div>
-                <div class="productStockElement">
-                    <p class="productProperty">Total Stocks Available:</p>
-                    <p class="productStock"></p>
-                </div>
-                <div class="productQuantityElement">
-                    <p class="productProperty">Quantity(pieces) </p>
-                    <div class="stockElement">
-                        <button class="cartIncrement">+</button>
-                        <p class="productQuantity">1</p>
-                        <button class="cartDecrement">-</button>
+            <div class="cards" id="cardvalue">
+                <article class="information [card]">
+                    <span class="category"></span>
+                    <div class="imageContainer">
+                        <img src="" alt="">
                     </div>
+                    <h2 class="productName"></h2>
+                   
+                    <div class="productPriceElement">
+                        <p class="productPrice"></p>
+                        <p class="productActualPrice"></p>
+                    </div>
+                    <div class="productStockElement">
+                        <p class="productProperty">Total Stocks Available:</p>
+                        <p class="productStock"></p>
+                    </div>
+                    <div class="productQuantityElement">
+                        <p class="productProperty">Quantity(pieces) </p>
+                        <div class="stockElement">
+                            <button class="cartIncrement">+</button>
+                            <p class="productQuantity">1</p>
+                            <button class="cartDecrement">-</button>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-button">
+                        <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                    </button>
+                    <button class="view-btn">view </button>
+
+                </article>
+            </div>
+
+        </template>
+
+    <div class="modal" >
+            <div class="modal-content">
+                <div>
+
+                    <span class="modal-close"></span>
+                    <img src="" alt="" id="modal-image">
                 </div>
-                <button class="add-to-cart-button">
-                    <i class="fa-solid fa-cart-shopping"></i> Add to Cart
-                </button>
+                <div>
 
-            </article>
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-price"></p>
+                    <p id="modal-decription"></p>
+                     <button class="add-to-cart-button">
+                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                   </button>
+                </div>
+
+            </div>
         </div>
-
-    </template>
 
  <!-- OFFER -->
 
@@ -290,7 +301,6 @@
 
 
     <script src="js/script.js"></script>
-    
 </body>
 
 </html>
