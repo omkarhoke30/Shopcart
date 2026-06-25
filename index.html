@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+   
 </head>
 
 <body>
@@ -37,7 +38,7 @@
                     <ul class="navbar-links">
                         <li><a href="index.html" style="color:#5a8cfb ;">Home</a></li>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="About.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="MyPurchase.html">MyPurchase</a></li>
                         <a href="MyPurchase.html" class="shop-cart-btn"><i class="fa-solid fa-cart-shopping"> </i>
@@ -62,7 +63,7 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="products.html">Products</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="About.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="MyPurchase.html">My Purchase</a></li>
                     </ul>
@@ -206,17 +207,7 @@
                         <img src="" alt="">
                     </div>
                     <h2 class="productName"></h2>
-                    <div class="productRating">
-
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="productDescription">
-
-                    </p>
+                   
                     <div class="productPriceElement">
                         <p class="productPrice"></p>
                         <p class="productActualPrice"></p>
@@ -236,13 +227,43 @@
                     <button class="add-to-cart-button">
                         <i class="fa-solid fa-cart-shopping"></i> Add to Cart
                     </button>
+                    <button class="view-btn">view </button>
 
                 </article>
             </div>
 
         </template>
 
-        <!-- template cards  -->
+        <div class="modal" >
+            <div class="modal-content">
+                <div>
+
+                    <span class="modal-close"></span>
+                    <img src="" alt="" id="modal-image">
+                </div>
+                <div>
+
+                    <h2 id="modal-title"></h2>
+                    <div class="productRating">
+
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p id="modal-decription"></p>
+                    <p id="modal-price"></p>
+                     <button class="add-to-cart-button">
+                            <i class="fa-solid fa-cart-shopping"></i> Add to Cart
+                   </button>
+                </div>
+
+            </div>
+        </div>
+
+
+     
         <section class="bottom-offer-container">
             <div>
                 <p>Special Offer</p>
